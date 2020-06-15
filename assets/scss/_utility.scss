@@ -1,0 +1,53 @@
+@import 'variables';
+
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: #{$i * 1}rem;
+  }
+  .my-#{$i} {
+    margin: #{$i * 1}rem 0;
+  }
+  .mx-#{$i} {
+    margin: 0 #{$i * 1}rem;
+  }
+  .p-#{$i} {
+    padding: #{$i * 1}rem;
+  }
+  .py-#{$i} {
+    padding: #{$i * 1}rem 0;
+  }
+  .px-#{$i} {
+    padding: 0 #{$i * 1}rem;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.background-primary {
+  background-color: $primaryColor;
+}
+
+.background-secondary {
+  background-color: $secondaryColor;
+}
+
+.text-primary {
+  color: $primaryColor;
+}
+
+.text-secondary {
+  color: $secondaryColor;
+}
+
+.text {
+  color: #000000;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-primary {
+  color: $secondaryColor;
+  background-color: $primaryColor;
+}
+
+.btn-secondary {
+  color: $primaryColor;
+  background-color: $secondaryColor;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

@@ -391,7 +391,7 @@ nav .list-group .list-item a:hover {
 }
 
 #recruit .form {
-  padding: 1rem 1.5rem;
+  padding: 3rem 1.5rem;
   background-color: #ffffff;
 }
 
@@ -434,7 +434,7 @@ nav .list-group .list-item a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 #about .heading-2 {

@@ -6,12 +6,40 @@ $phone: 500px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  #videos {
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+      justify-items: center;
+    }
+  }
+
+  .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: $phone) {
-  .navbar .list-group {
-    display: none;
+  .navbar {
+    .flex-wrap {
+      justify-content: center;
+      align-items: center;
+    }
+    .list-group {
+      display: none;
+    }
   }
+
+  .showcase {
+    &-content {
+      .heading {
+        margin: 1rem 0;
+      }
+    }
+  }
+
   #videos {
     .videos {
       display: grid;
@@ -32,24 +60,34 @@ $phone: 500px;
   }
 
   .heading {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
   }
 
   .lead {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .heading-2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .lead-2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   #about {
     .lead-2 {
       padding: 0 2rem;
+    }
+  }
+
+  #footer {
+    .flex-wrap {
+      flex-wrap: wrap-reverse;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

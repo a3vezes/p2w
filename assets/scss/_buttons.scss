@@ -5,16 +5,19 @@
   padding: 1rem 2rem;
   border: none;
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
   &:hover {
     opacity: 0.9;
+  }
+  a {
+    cursor: pointer;
   }
 }
 
 .btn-primary {
   color: $secondaryColor;
-  background-color: $primaryColor;
+  background-color: $btn-primary;
 }
 
 .btn-secondary {

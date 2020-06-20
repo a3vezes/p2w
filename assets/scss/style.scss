@@ -25,18 +25,21 @@ li {
 nav {
   position: sticky;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
   z-index: 1;
-
+  padding: 1rem 10rem;
+  .flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
   p {
     padding: 0;
     margin: 0;
   }
   .brand {
     font-size: 3rem;
+    cursor: pointer;
   }
   .list-group {
     display: flex;
@@ -125,39 +128,39 @@ nav {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.75);
+    p,
+    h1 {
+      padding: 0;
+      margin: 2.5rem;
+    }
   }
 }
 
 .heading {
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .lead {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .heading-2 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .lead-2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 // Recruit
 #recruit {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-  .woe {
-    background: url('../imgs/WoE2.jpg') no-repeat center center/cover;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-
+  background-color: #ebebeb;
   .form {
     padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    h3 {
+      color: $btn-primary;
+    }
     label {
       display: block;
       font-size: 1.5rem;
@@ -178,24 +181,30 @@ nav {
 // About
 #about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
 
-  img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 2rem;
-  }
+  // img {
+  //   width: 6rem;
+  //   height: 6rem;
+  //   border-radius: 2rem;
+  //   margin: 0;
+  //   padding: 0;
+  // }
 
   div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem;
   }
 
   .heading-2 {
     margin: 1rem 0;
+  }
+
+  .lead-2 {
+    padding: 1rem 0;
   }
 }
 
@@ -206,7 +215,7 @@ nav {
   padding: 2rem;
   .videos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     justify-items: center;
   }
@@ -229,6 +238,15 @@ embed {
   background-color: $primaryColor;
   text-align: center;
   color: #fff;
+  .flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fab {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
 }
 
 @import 'responsive';
